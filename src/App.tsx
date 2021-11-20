@@ -1,5 +1,7 @@
+import ModalButton from "./ModalButton/ModalButton";
+
 function App() {
-  return <div className="App">Hello Word!</div>;
+  return <ModalButton />;
 }
 
 export default App;
