@@ -1,7 +1,13 @@
 import { ButtonStyled } from "./ModalButton.styled";
 
-const ModalButton = () => {
-  return <ButtonStyled>Modal</ButtonStyled>;
+export interface ModalButtonProps {
+  onClick: () => void;
+}
+
+const ModalButton = (props: ModalButtonProps) => {
+  const { onClick } = props;
+
+  return <ButtonStyled onClick={onClick}>Modal</ButtonStyled>;
 };
 
 export default ModalButton;
